@@ -8,7 +8,38 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Item">
 
-    <Grid>
-        
+    <Grid Background="#E4E4E4" Margin="0,0,0,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="301"/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Подробнее" Margin="10,70,10,0" Height="25" Background="#ff4000" BorderBrush="#ff4000" Foreground="White" VerticalAlignment="Top"/>
+        <Label Content="Победа" Grid.Column="1" Margin="10,10,10,0" VerticalAlignment="Top"/>
+        <Label x:Name="fromTime" Content="06:00" Grid.Column="1" Margin="10,41,10,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="fromDate" Content="10.02.2024" Grid.Column="1" Margin="10,77,10,0" VerticalAlignment="Top"/>
+        <Label x:Name="from" Content="Пермь" Grid.Column="1" Margin="10,108,10,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="way" Content="в пути 2ч 55м" Grid.Column="2" Margin="45,39,45,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Image Grid.Column="2" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="9.6,35,0,0" Source="/Airlines_Subbotin;component/Image/plane.png"/>
+        <Grid Grid.Column="2" Background="#939393" Height="5" Margin="5,70,5,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="lPrice" Content="1999 ₽" Margin="10,30,10,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Height="35"/>
+        <Label Content="Победа" Grid.Column="3" Margin="10,10,10,0" VerticalAlignment="Top"/>
+        <Label x:Name="toTime" Content="06:00" Grid.Column="3" Margin="10,41,10,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="toDate" Content="10.02.2024" Grid.Column="3" Margin="10,77,10,0" VerticalAlignment="Top"/>
+        <Label x:Name="to" Content="Пермь" Grid.Column="3" Margin="10,108,10,0" VerticalAlignment="Top"/>
+        <Image Grid.Column="2" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,35,5,0" Source="/Airlines_Subbotin;component/Image/plane.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="39.026"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
     </Grid>
 </Page>
