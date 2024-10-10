@@ -1,0 +1,20 @@
+﻿<Page x:Class="Airlines_Subbotin.Pages.Main"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Airlines_Subbotin.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Main">
+
+    <Grid Background="#0c73fe">
+        <Label Content="Поиск дешевых авиабилетов" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Foreground="White" FontWeight="Bold" Margin="164,50,157,251" Height="29" Width="249"/>
+        <Label Content="Лучший способ купить авиабилеты дёшево" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="157,84,155,220" Width="258" Height="26"/>
+        <Label Content="Откуда" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="157,115,155,188" Width="258" Height="27"/>
+        <TextBox x:Name="from" Width="258" Height="33" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="157,142,155,155"/>
+        <Label Content="Куда" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="157,180,155,122" Width="258" Height="28"/>
+        <TextBox x:Name="to" Width="258" Height="33" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="157,208,155,89"/>
+        <Button Click="Search" VerticalAlignment="Center" HorizontalAlignment="Center" Width="102" Height="30" Content="Найти" Margin="313,256,155,44" Background="#ff4000" BorderBrush="#ff4000" Foreground="White"/>
+    </Grid>
+</Page>
